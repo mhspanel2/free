@@ -55,7 +55,7 @@ jobs:
           TEHRAN_TIME=$(TZ='Asia/Tehran' date +'%H%M')
           sudo tailscale up \
             --auth-key="$TAILSCALE_AUTHKEY" \
-            --hostname="mhs-${TEHRAN_TIME}" \
+            --hostname="mhs2-${TEHRAN_TIME}" \
             --advertise-exit-node
 
           echo "Waiting for Tailscale connection..."
